@@ -48,6 +48,10 @@
     <Compile Include="Helpers\ILaunchTwitter.cs" />
     <Compile Include="Helpers\ITweetStore.cs" />
     <Compile Include="Helpers\ListImageCell.cs" />
+    <Compile Include="Manager\IFeedManager.cs" />
+    <Compile Include="Manager\ManagerFactory.cs" />
+    <Compile Include="Manager\MockTwitterManager.cs" />
+    <Compile Include="Manager\TwitterManager.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\FeedItem.cs" />
     <Compile Include="Models\HomeMenuItem.cs" />

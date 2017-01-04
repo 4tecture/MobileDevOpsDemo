@@ -4,12 +4,13 @@ using System.Collections.ObjectModel;
 using LinqToTwitter;
 using System.Threading.Tasks;
 using System.Linq;
+using Hanselman.Portable.Manager;
 
 namespace Hanselman.Portable
 {
     public class TwitterViewModel : BaseViewModel
     {
-
+        private IFeedManager<Tweet> twitterManager;
         public ObservableCollection<Tweet> Tweets { get; set; }
 
         public TwitterViewModel()
@@ -17,7 +18,9 @@ namespace Hanselman.Portable
             Title = "Twitter";
             Icon = "slideout.png";
             Tweets = new ObservableCollection<Tweet>();
-
+            this.twitterManager = ManagerFactory.CreateTwitterManager(
+                                    "ZTmEODUCChOhLXO4lnUCEbH2I",
+                                    "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J");
         }
 
         private Command loadTweetsCommand;
@@ -47,41 +50,8 @@ namespace Hanselman.Portable
             var error = false;
             try
             {
-
                 Tweets.Clear();
-                var auth = new ApplicationOnlyAuthorizer()
-                {
-                    CredentialStore = new InMemoryCredentialStore
-                    {
-                        ConsumerKey = "ZTmEODUCChOhLXO4lnUCEbH2I",
-                        ConsumerSecret = "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J",
-                    },
-                };
-                await auth.AuthorizeAsync();
-
-                var twitterContext = new TwitterContext(auth);
-
-                var queryResponse = await
-                  (from tweet in twitterContext.Status
-                   where tweet.Type == StatusType.User &&
-                     tweet.ScreenName == "shanselman" &&
-                     tweet.Count == 100 &&
-                     tweet.IncludeRetweets == true &&
-                     tweet.ExcludeReplies == true
-                   select tweet).ToListAsync();
-
-                var tweets =
-                  (from tweet in queryResponse
-                   select new Tweet
-                   {
-                       StatusID = tweet.StatusID,
-                       ScreenName = tweet.User.ScreenNameResponse,
-                       Text = tweet.Text,
-                       CurrentUserRetweet = tweet.CurrentUserRetweet,
-                       CreatedAt = tweet.CreatedAt,
-                       Image = tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
-                                      tweet.RetweetedStatus.User.ProfileImageUrl.Replace("http://", "https://") : (tweet.User.ScreenNameResponse == "shanselman" ? "scott159.png" : tweet.User.ProfileImageUrl.Replace("http://", "https://"))
-                   }).ToList();
+                var tweets = await this.twitterManager.LoadItemsAsync();
                 foreach (var tweet in tweets)
                 {
                     Tweets.Add(tweet);
@@ -90,7 +60,7 @@ namespace Hanselman.Portable
                 if (Device.OS == TargetPlatform.iOS)
                 {
                     // only does anything on iOS, for the Watch
-                    DependencyService.Get<ITweetStore>().Save(tweets);
+                    DependencyService.Get<ITweetStore>().Save(tweets.ToList());
                 }
 
 
