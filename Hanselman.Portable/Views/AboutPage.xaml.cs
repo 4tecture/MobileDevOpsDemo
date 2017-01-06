@@ -48,9 +48,15 @@ namespace Hanselman.Portable.Views
             {
                 Command = new Command(() => OpenBrowser("https://www.instagram.com/shanselman"))
             });
+        }
 
-
-
+        public void OnProvideFeedbackClicked(object sender, EventArgs args)
+        {
+            var feedbackService = DependencyService.Get<IFeedbackService>();
+            if (feedbackService != null)
+            {
+                feedbackService.ProvideFeedback();
+            }
         }
     }
 }

@@ -26,6 +26,7 @@
         
       </StackLayout>
     
+    <Button Text="Provide Feedback" Clicked="OnProvideFeedbackClicked" />
     </StackLayout>
 
   </ScrollView>

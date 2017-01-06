@@ -26,6 +26,126 @@ namespace HanselmanAndroid
 		
 		public static void UpdateIdValues()
 		{
+			global::HockeyApp.Resource.Color.hockeyapp_background_header = global::HanselmanAndroid.Resource.Color.hockeyapp_background_header;
+			global::HockeyApp.Resource.Color.hockeyapp_background_light = global::HanselmanAndroid.Resource.Color.hockeyapp_background_light;
+			global::HockeyApp.Resource.Color.hockeyapp_background_white = global::HanselmanAndroid.Resource.Color.hockeyapp_background_white;
+			global::HockeyApp.Resource.Color.hockeyapp_button_background = global::HanselmanAndroid.Resource.Color.hockeyapp_button_background;
+			global::HockeyApp.Resource.Color.hockeyapp_button_background_pressed = global::HanselmanAndroid.Resource.Color.hockeyapp_button_background_pressed;
+			global::HockeyApp.Resource.Color.hockeyapp_button_background_selected = global::HanselmanAndroid.Resource.Color.hockeyapp_button_background_selected;
+			global::HockeyApp.Resource.Color.hockeyapp_text_black = global::HanselmanAndroid.Resource.Color.hockeyapp_text_black;
+			global::HockeyApp.Resource.Color.hockeyapp_text_light = global::HanselmanAndroid.Resource.Color.hockeyapp_text_light;
+			global::HockeyApp.Resource.Color.hockeyapp_text_normal = global::HanselmanAndroid.Resource.Color.hockeyapp_text_normal;
+			global::HockeyApp.Resource.Color.hockeyapp_text_white = global::HanselmanAndroid.Resource.Color.hockeyapp_text_white;
+			global::HockeyApp.Resource.Drawable.hockeyapp_btn_background = global::HanselmanAndroid.Resource.Drawable.hockeyapp_btn_background;
+			global::HockeyApp.Resource.Id.button_add_response = global::HanselmanAndroid.Resource.Id.button_add_response;
+			global::HockeyApp.Resource.Id.button_attachment = global::HanselmanAndroid.Resource.Id.button_attachment;
+			global::HockeyApp.Resource.Id.button_login = global::HanselmanAndroid.Resource.Id.button_login;
+			global::HockeyApp.Resource.Id.button_refresh = global::HanselmanAndroid.Resource.Id.button_refresh;
+			global::HockeyApp.Resource.Id.button_send = global::HanselmanAndroid.Resource.Id.button_send;
+			global::HockeyApp.Resource.Id.button_update = global::HanselmanAndroid.Resource.Id.button_update;
+			global::HockeyApp.Resource.Id.input_email = global::HanselmanAndroid.Resource.Id.input_email;
+			global::HockeyApp.Resource.Id.input_message = global::HanselmanAndroid.Resource.Id.input_message;
+			global::HockeyApp.Resource.Id.input_name = global::HanselmanAndroid.Resource.Id.input_name;
+			global::HockeyApp.Resource.Id.input_password = global::HanselmanAndroid.Resource.Id.input_password;
+			global::HockeyApp.Resource.Id.input_subject = global::HanselmanAndroid.Resource.Id.input_subject;
+			global::HockeyApp.Resource.Id.label_author = global::HanselmanAndroid.Resource.Id.label_author;
+			global::HockeyApp.Resource.Id.label_date = global::HanselmanAndroid.Resource.Id.label_date;
+			global::HockeyApp.Resource.Id.label_last_updated = global::HanselmanAndroid.Resource.Id.label_last_updated;
+			global::HockeyApp.Resource.Id.label_message = global::HanselmanAndroid.Resource.Id.label_message;
+			global::HockeyApp.Resource.Id.label_text = global::HanselmanAndroid.Resource.Id.label_text;
+			global::HockeyApp.Resource.Id.label_title = global::HanselmanAndroid.Resource.Id.label_title;
+			global::HockeyApp.Resource.Id.label_version = global::HanselmanAndroid.Resource.Id.label_version;
+			global::HockeyApp.Resource.Id.list_attachments = global::HanselmanAndroid.Resource.Id.list_attachments;
+			global::HockeyApp.Resource.Id.list_feedback_messages = global::HanselmanAndroid.Resource.Id.list_feedback_messages;
+			global::HockeyApp.Resource.Id.text_headline = global::HanselmanAndroid.Resource.Id.text_headline;
+			global::HockeyApp.Resource.Id.view_header = global::HanselmanAndroid.Resource.Id.view_header;
+			global::HockeyApp.Resource.Id.web_update_details = global::HanselmanAndroid.Resource.Id.web_update_details;
+			global::HockeyApp.Resource.Id.wrapper_attachments = global::HanselmanAndroid.Resource.Id.wrapper_attachments;
+			global::HockeyApp.Resource.Id.wrapper_feedback = global::HanselmanAndroid.Resource.Id.wrapper_feedback;
+			global::HockeyApp.Resource.Id.wrapper_feedback_scroll = global::HanselmanAndroid.Resource.Id.wrapper_feedback_scroll;
+			global::HockeyApp.Resource.Id.wrapper_messages = global::HanselmanAndroid.Resource.Id.wrapper_messages;
+			global::HockeyApp.Resource.Id.wrapper_messages_buttons = global::HanselmanAndroid.Resource.Id.wrapper_messages_buttons;
+			global::HockeyApp.Resource.Layout.hockeyapp_activity_expiry_info = global::HanselmanAndroid.Resource.Layout.hockeyapp_activity_expiry_info;
+			global::HockeyApp.Resource.Layout.hockeyapp_activity_feedback = global::HanselmanAndroid.Resource.Layout.hockeyapp_activity_feedback;
+			global::HockeyApp.Resource.Layout.hockeyapp_activity_login = global::HanselmanAndroid.Resource.Layout.hockeyapp_activity_login;
+			global::HockeyApp.Resource.Layout.hockeyapp_activity_update = global::HanselmanAndroid.Resource.Layout.hockeyapp_activity_update;
+			global::HockeyApp.Resource.Layout.hockeyapp_fragment_update = global::HanselmanAndroid.Resource.Layout.hockeyapp_fragment_update;
+			global::HockeyApp.Resource.Layout.hockeyapp_view_feedback_message = global::HanselmanAndroid.Resource.Layout.hockeyapp_view_feedback_message;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_app_name_fallback = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_app_name_fallback;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_message = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_message;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_neutral_button = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_neutral_button;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_crash_dialog_title = global::HanselmanAndroid.Resource.String.hockeyapp_crash_dialog_title;
+			global::HockeyApp.Resource.String.hockeyapp_dialog_error_message = global::HanselmanAndroid.Resource.String.hockeyapp_dialog_error_message;
+			global::HockeyApp.Resource.String.hockeyapp_dialog_error_title = global::HanselmanAndroid.Resource.String.hockeyapp_dialog_error_title;
+			global::HockeyApp.Resource.String.hockeyapp_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_download_failed_dialog_message = global::HanselmanAndroid.Resource.String.hockeyapp_download_failed_dialog_message;
+			global::HockeyApp.Resource.String.hockeyapp_download_failed_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_download_failed_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_download_failed_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_download_failed_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_download_failed_dialog_title = global::HanselmanAndroid.Resource.String.hockeyapp_download_failed_dialog_title;
+			global::HockeyApp.Resource.String.hockeyapp_error_no_network_message = global::HanselmanAndroid.Resource.String.hockeyapp_error_no_network_message;
+			global::HockeyApp.Resource.String.hockeyapp_expiry_info_text = global::HanselmanAndroid.Resource.String.hockeyapp_expiry_info_text;
+			global::HockeyApp.Resource.String.hockeyapp_expiry_info_title = global::HanselmanAndroid.Resource.String.hockeyapp_expiry_info_title;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_attach_file = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_attach_file;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_attach_picture = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_attach_picture;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_attachment_button_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_attachment_button_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_attachment_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_attachment_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_attachment_loading = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_attachment_loading;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_email_hint = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_email_hint;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_failed_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_failed_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_failed_title = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_failed_title;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_fetching_feedback_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_fetching_feedback_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_generic_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_generic_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_last_updated_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_last_updated_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_max_attachments_allowed = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_max_attachments_allowed;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_message_hint = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_message_hint;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_name_hint = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_name_hint;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_refresh_button_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_refresh_button_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_response_button_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_response_button_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_select_file = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_select_file;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_select_picture = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_select_picture;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_send_button_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_send_button_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_send_generic_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_send_generic_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_send_network_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_send_network_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_sending_feedback_text = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_sending_feedback_text;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_subject_hint = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_subject_hint;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_title = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_title;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_validate_email_empty = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_validate_email_empty;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_validate_email_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_validate_email_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_validate_name_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_validate_name_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_validate_subject_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_validate_subject_error;
+			global::HockeyApp.Resource.String.hockeyapp_feedback_validate_text_error = global::HanselmanAndroid.Resource.String.hockeyapp_feedback_validate_text_error;
+			global::HockeyApp.Resource.String.hockeyapp_login_email_hint = global::HanselmanAndroid.Resource.String.hockeyapp_login_email_hint;
+			global::HockeyApp.Resource.String.hockeyapp_login_headline_text = global::HanselmanAndroid.Resource.String.hockeyapp_login_headline_text;
+			global::HockeyApp.Resource.String.hockeyapp_login_headline_text_email_only = global::HanselmanAndroid.Resource.String.hockeyapp_login_headline_text_email_only;
+			global::HockeyApp.Resource.String.hockeyapp_login_login_button_text = global::HanselmanAndroid.Resource.String.hockeyapp_login_login_button_text;
+			global::HockeyApp.Resource.String.hockeyapp_login_missing_credentials_toast = global::HanselmanAndroid.Resource.String.hockeyapp_login_missing_credentials_toast;
+			global::HockeyApp.Resource.String.hockeyapp_login_password_hint = global::HanselmanAndroid.Resource.String.hockeyapp_login_password_hint;
+			global::HockeyApp.Resource.String.hockeyapp_paint_dialog_message = global::HanselmanAndroid.Resource.String.hockeyapp_paint_dialog_message;
+			global::HockeyApp.Resource.String.hockeyapp_paint_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_paint_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_paint_dialog_neutral_button = global::HanselmanAndroid.Resource.String.hockeyapp_paint_dialog_neutral_button;
+			global::HockeyApp.Resource.String.hockeyapp_paint_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_paint_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_paint_indicator_toast = global::HanselmanAndroid.Resource.String.hockeyapp_paint_indicator_toast;
+			global::HockeyApp.Resource.String.hockeyapp_paint_menu_clear = global::HanselmanAndroid.Resource.String.hockeyapp_paint_menu_clear;
+			global::HockeyApp.Resource.String.hockeyapp_paint_menu_save = global::HanselmanAndroid.Resource.String.hockeyapp_paint_menu_save;
+			global::HockeyApp.Resource.String.hockeyapp_paint_menu_undo = global::HanselmanAndroid.Resource.String.hockeyapp_paint_menu_undo;
+			global::HockeyApp.Resource.String.hockeyapp_permission_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_permission_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_permission_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_permission_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_permission_update_message = global::HanselmanAndroid.Resource.String.hockeyapp_permission_update_message;
+			global::HockeyApp.Resource.String.hockeyapp_permission_update_title = global::HanselmanAndroid.Resource.String.hockeyapp_permission_update_title;
+			global::HockeyApp.Resource.String.hockeyapp_update_button = global::HanselmanAndroid.Resource.String.hockeyapp_update_button;
+			global::HockeyApp.Resource.String.hockeyapp_update_dialog_message = global::HanselmanAndroid.Resource.String.hockeyapp_update_dialog_message;
+			global::HockeyApp.Resource.String.hockeyapp_update_dialog_negative_button = global::HanselmanAndroid.Resource.String.hockeyapp_update_dialog_negative_button;
+			global::HockeyApp.Resource.String.hockeyapp_update_dialog_positive_button = global::HanselmanAndroid.Resource.String.hockeyapp_update_dialog_positive_button;
+			global::HockeyApp.Resource.String.hockeyapp_update_dialog_title = global::HanselmanAndroid.Resource.String.hockeyapp_update_dialog_title;
+			global::HockeyApp.Resource.String.hockeyapp_update_mandatory_toast = global::HanselmanAndroid.Resource.String.hockeyapp_update_mandatory_toast;
+			global::HockeyApp.Resource.String.hockeyapp_update_version_details_label = global::HanselmanAndroid.Resource.String.hockeyapp_update_version_details_label;
+			global::HockeyApp.Resource.String.library_name = global::HanselmanAndroid.Resource.String.library_name;
+			global::HockeyApp.Resource.Style.HockeyApp_ButtonStyle = global::HanselmanAndroid.Resource.Style.HockeyApp_ButtonStyle;
+			global::HockeyApp.Resource.Style.HockeyApp_EditTextStyle = global::HanselmanAndroid.Resource.Style.HockeyApp_EditTextStyle;
+			global::HockeyApp.Resource.Style.HockeyApp_SingleLineInputStyle = global::HanselmanAndroid.Resource.Style.HockeyApp_SingleLineInputStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::HanselmanAndroid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -1160,32 +1280,32 @@ namespace HanselmanAndroid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f09005d
-			public const int abc_background_cache_hint_selector_material_dark = 2131296349;
+			// aapt resource value: 0x7f090067
+			public const int abc_background_cache_hint_selector_material_dark = 2131296359;
 			
-			// aapt resource value: 0x7f09005e
-			public const int abc_background_cache_hint_selector_material_light = 2131296350;
+			// aapt resource value: 0x7f090068
+			public const int abc_background_cache_hint_selector_material_light = 2131296360;
 			
-			// aapt resource value: 0x7f09005f
-			public const int abc_color_highlight_material = 2131296351;
+			// aapt resource value: 0x7f090069
+			public const int abc_color_highlight_material = 2131296361;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_input_method_navigation_guard = 2131296277;
 			
-			// aapt resource value: 0x7f090060
-			public const int abc_primary_text_disable_only_material_dark = 2131296352;
+			// aapt resource value: 0x7f09006a
+			public const int abc_primary_text_disable_only_material_dark = 2131296362;
 			
-			// aapt resource value: 0x7f090061
-			public const int abc_primary_text_disable_only_material_light = 2131296353;
+			// aapt resource value: 0x7f09006b
+			public const int abc_primary_text_disable_only_material_light = 2131296363;
 			
-			// aapt resource value: 0x7f090062
-			public const int abc_primary_text_material_dark = 2131296354;
+			// aapt resource value: 0x7f09006c
+			public const int abc_primary_text_material_dark = 2131296364;
 			
-			// aapt resource value: 0x7f090063
-			public const int abc_primary_text_material_light = 2131296355;
+			// aapt resource value: 0x7f09006d
+			public const int abc_primary_text_material_light = 2131296365;
 			
-			// aapt resource value: 0x7f090064
-			public const int abc_search_url_text = 2131296356;
+			// aapt resource value: 0x7f09006e
+			public const int abc_search_url_text = 2131296366;
 			
 			// aapt resource value: 0x7f090016
 			public const int abc_search_url_text_normal = 2131296278;
@@ -1196,14 +1316,14 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f090018
 			public const int abc_search_url_text_selected = 2131296280;
 			
+			// aapt resource value: 0x7f09006f
+			public const int abc_secondary_text_material_dark = 2131296367;
+			
+			// aapt resource value: 0x7f090070
+			public const int abc_secondary_text_material_light = 2131296368;
+			
 			// aapt resource value: 0x7f090065
-			public const int abc_secondary_text_material_dark = 2131296357;
-			
-			// aapt resource value: 0x7f090066
-			public const int abc_secondary_text_material_light = 2131296358;
-			
-			// aapt resource value: 0x7f09005b
-			public const int accent = 2131296347;
+			public const int accent = 2131296357;
 			
 			// aapt resource value: 0x7f090019
 			public const int accent_material_dark = 2131296281;
@@ -1262,8 +1382,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f090008
 			public const int common_action_bar_splitter = 2131296264;
 			
-			// aapt resource value: 0x7f090067
-			public const int common_google_signin_btn_text_dark = 2131296359;
+			// aapt resource value: 0x7f090071
+			public const int common_google_signin_btn_text_dark = 2131296369;
 			
 			// aapt resource value: 0x7f090009
 			public const int common_google_signin_btn_text_dark_default = 2131296265;
@@ -1277,8 +1397,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f09000a
 			public const int common_google_signin_btn_text_dark_pressed = 2131296266;
 			
-			// aapt resource value: 0x7f090068
-			public const int common_google_signin_btn_text_light = 2131296360;
+			// aapt resource value: 0x7f090072
+			public const int common_google_signin_btn_text_light = 2131296370;
 			
 			// aapt resource value: 0x7f09000d
 			public const int common_google_signin_btn_text_light_default = 2131296269;
@@ -1292,8 +1412,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f09000e
 			public const int common_google_signin_btn_text_light_pressed = 2131296270;
 			
-			// aapt resource value: 0x7f090069
-			public const int common_plus_signin_btn_text_dark = 2131296361;
+			// aapt resource value: 0x7f090073
+			public const int common_plus_signin_btn_text_dark = 2131296371;
 			
 			// aapt resource value: 0x7f090000
 			public const int common_plus_signin_btn_text_dark_default = 2131296256;
@@ -1307,8 +1427,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f090001
 			public const int common_plus_signin_btn_text_dark_pressed = 2131296257;
 			
-			// aapt resource value: 0x7f09006a
-			public const int common_plus_signin_btn_text_light = 2131296362;
+			// aapt resource value: 0x7f090074
+			public const int common_plus_signin_btn_text_light = 2131296372;
 			
 			// aapt resource value: 0x7f090004
 			public const int common_plus_signin_btn_text_light_default = 2131296260;
@@ -1382,6 +1502,36 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f090030
 			public const int hint_foreground_material_light = 2131296304;
 			
+			// aapt resource value: 0x7f090059
+			public const int hockeyapp_background_header = 2131296345;
+			
+			// aapt resource value: 0x7f09005a
+			public const int hockeyapp_background_light = 2131296346;
+			
+			// aapt resource value: 0x7f09005b
+			public const int hockeyapp_background_white = 2131296347;
+			
+			// aapt resource value: 0x7f09005c
+			public const int hockeyapp_button_background = 2131296348;
+			
+			// aapt resource value: 0x7f09005d
+			public const int hockeyapp_button_background_pressed = 2131296349;
+			
+			// aapt resource value: 0x7f09005e
+			public const int hockeyapp_button_background_selected = 2131296350;
+			
+			// aapt resource value: 0x7f09005f
+			public const int hockeyapp_text_black = 2131296351;
+			
+			// aapt resource value: 0x7f090060
+			public const int hockeyapp_text_light = 2131296352;
+			
+			// aapt resource value: 0x7f090061
+			public const int hockeyapp_text_normal = 2131296353;
+			
+			// aapt resource value: 0x7f090062
+			public const int hockeyapp_text_white = 2131296354;
+			
 			// aapt resource value: 0x7f090031
 			public const int material_blue_grey_800 = 2131296305;
 			
@@ -1418,11 +1568,11 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f09003c
 			public const int material_grey_900 = 2131296316;
 			
-			// aapt resource value: 0x7f090059
-			public const int primary = 2131296345;
+			// aapt resource value: 0x7f090063
+			public const int primary = 2131296355;
 			
-			// aapt resource value: 0x7f09005a
-			public const int primaryDark = 2131296346;
+			// aapt resource value: 0x7f090064
+			public const int primaryDark = 2131296356;
 			
 			// aapt resource value: 0x7f09003d
 			public const int primary_dark_material_dark = 2131296317;
@@ -1472,11 +1622,11 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f09004c
 			public const int switch_thumb_disabled_material_light = 2131296332;
 			
-			// aapt resource value: 0x7f09006b
-			public const int switch_thumb_material_dark = 2131296363;
+			// aapt resource value: 0x7f090075
+			public const int switch_thumb_material_dark = 2131296373;
 			
-			// aapt resource value: 0x7f09006c
-			public const int switch_thumb_material_light = 2131296364;
+			// aapt resource value: 0x7f090076
+			public const int switch_thumb_material_light = 2131296374;
 			
 			// aapt resource value: 0x7f09004d
 			public const int switch_thumb_normal_material_dark = 2131296333;
@@ -1484,8 +1634,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f09004e
 			public const int switch_thumb_normal_material_light = 2131296334;
 			
-			// aapt resource value: 0x7f09005c
-			public const int window_background = 2131296348;
+			// aapt resource value: 0x7f090066
+			public const int window_background = 2131296358;
 			
 			static Color()
 			{
@@ -2237,304 +2387,307 @@ namespace HanselmanAndroid
 			public const int hm_full = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_audiotrack = 2130837629;
+			public const int hockeyapp_btn_background = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_audiotrack_light = 2130837630;
+			public const int ic_audiotrack = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_bluetooth_grey = 2130837631;
+			public const int ic_audiotrack_light = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_bluetooth_white = 2130837632;
+			public const int ic_bluetooth_grey = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_cast_dark = 2130837633;
+			public const int ic_bluetooth_white = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_cast_disabled_light = 2130837634;
+			public const int ic_cast_dark = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_cast_grey = 2130837635;
+			public const int ic_cast_disabled_light = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_cast_light = 2130837636;
+			public const int ic_cast_grey = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_cast_off_light = 2130837637;
+			public const int ic_cast_light = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_cast_on_0_light = 2130837638;
+			public const int ic_cast_off_light = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_cast_on_1_light = 2130837639;
+			public const int ic_cast_on_0_light = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_cast_on_2_light = 2130837640;
+			public const int ic_cast_on_1_light = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_cast_on_light = 2130837641;
+			public const int ic_cast_on_2_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_cast_white = 2130837642;
+			public const int ic_cast_on_light = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_close_dark = 2130837643;
+			public const int ic_cast_white = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_close_light = 2130837644;
+			public const int ic_close_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_collapse = 2130837645;
+			public const int ic_close_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_collapse_00000 = 2130837646;
+			public const int ic_collapse = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_collapse_00001 = 2130837647;
+			public const int ic_collapse_00000 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_collapse_00002 = 2130837648;
+			public const int ic_collapse_00001 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_collapse_00003 = 2130837649;
+			public const int ic_collapse_00002 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_collapse_00004 = 2130837650;
+			public const int ic_collapse_00003 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_collapse_00005 = 2130837651;
+			public const int ic_collapse_00004 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_collapse_00006 = 2130837652;
+			public const int ic_collapse_00005 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_collapse_00007 = 2130837653;
+			public const int ic_collapse_00006 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_collapse_00008 = 2130837654;
+			public const int ic_collapse_00007 = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_collapse_00009 = 2130837655;
+			public const int ic_collapse_00008 = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_collapse_00010 = 2130837656;
+			public const int ic_collapse_00009 = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_collapse_00011 = 2130837657;
+			public const int ic_collapse_00010 = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_collapse_00012 = 2130837658;
+			public const int ic_collapse_00011 = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_collapse_00013 = 2130837659;
+			public const int ic_collapse_00012 = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_collapse_00014 = 2130837660;
+			public const int ic_collapse_00013 = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_collapse_00015 = 2130837661;
+			public const int ic_collapse_00014 = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_expand = 2130837662;
+			public const int ic_collapse_00015 = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_expand_00000 = 2130837663;
+			public const int ic_expand = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_expand_00001 = 2130837664;
+			public const int ic_expand_00000 = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_expand_00002 = 2130837665;
+			public const int ic_expand_00001 = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_expand_00003 = 2130837666;
+			public const int ic_expand_00002 = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_expand_00004 = 2130837667;
+			public const int ic_expand_00003 = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_expand_00005 = 2130837668;
+			public const int ic_expand_00004 = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_expand_00006 = 2130837669;
+			public const int ic_expand_00005 = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_expand_00007 = 2130837670;
+			public const int ic_expand_00006 = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_expand_00008 = 2130837671;
+			public const int ic_expand_00007 = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_expand_00009 = 2130837672;
+			public const int ic_expand_00008 = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_expand_00010 = 2130837673;
+			public const int ic_expand_00009 = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_expand_00011 = 2130837674;
+			public const int ic_expand_00010 = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_expand_00012 = 2130837675;
+			public const int ic_expand_00011 = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_expand_00013 = 2130837676;
+			public const int ic_expand_00012 = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_expand_00014 = 2130837677;
+			public const int ic_expand_00013 = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_expand_00015 = 2130837678;
+			public const int ic_expand_00014 = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_launcher = 2130837679;
+			public const int ic_expand_00015 = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_media_pause = 2130837680;
+			public const int ic_launcher = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_media_play = 2130837681;
+			public const int ic_media_pause = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_media_route_disabled_mono_dark = 2130837682;
+			public const int ic_media_play = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_media_route_off_mono_dark = 2130837683;
+			public const int ic_media_route_disabled_mono_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_media_route_on_0_mono_dark = 2130837684;
+			public const int ic_media_route_off_mono_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_media_route_on_1_mono_dark = 2130837685;
+			public const int ic_media_route_on_0_mono_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_media_route_on_2_mono_dark = 2130837686;
+			public const int ic_media_route_on_1_mono_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_media_route_on_mono_dark = 2130837687;
+			public const int ic_media_route_on_2_mono_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_pause = 2130837688;
+			public const int ic_media_route_on_mono_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_pause_dark = 2130837689;
+			public const int ic_pause = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_pause_light = 2130837690;
+			public const int ic_pause_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_play = 2130837691;
+			public const int ic_pause_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_play_dark = 2130837692;
+			public const int ic_play = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_play_light = 2130837693;
+			public const int ic_play_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_share = 2130837694;
+			public const int ic_play_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_speaker_dark = 2130837695;
+			public const int ic_share = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_speaker_group_dark = 2130837696;
+			public const int ic_speaker_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_speaker_group_light = 2130837697;
+			public const int ic_speaker_group_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_speaker_light = 2130837698;
+			public const int ic_speaker_group_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_stop = 2130837699;
+			public const int ic_speaker_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_tv_dark = 2130837700;
+			public const int ic_stop = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_tv_light = 2130837701;
+			public const int ic_tv_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int instagram = 2130837702;
+			public const int ic_tv_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int mr_dialog_material_background_dark = 2130837703;
+			public const int instagram = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int mr_dialog_material_background_light = 2130837704;
+			public const int mr_dialog_material_background_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int mr_ic_audiotrack_light = 2130837705;
+			public const int mr_dialog_material_background_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int mr_ic_cast_dark = 2130837706;
+			public const int mr_ic_audiotrack_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int mr_ic_cast_light = 2130837707;
+			public const int mr_ic_cast_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int mr_ic_close_dark = 2130837708;
+			public const int mr_ic_cast_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int mr_ic_close_light = 2130837709;
+			public const int mr_ic_close_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837710;
+			public const int mr_ic_close_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int mr_ic_media_route_connecting_mono_light = 2130837711;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int mr_ic_media_route_mono_dark = 2130837712;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int mr_ic_media_route_mono_light = 2130837713;
+			public const int mr_ic_media_route_mono_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int mr_ic_pause_dark = 2130837714;
+			public const int mr_ic_media_route_mono_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int mr_ic_pause_light = 2130837715;
+			public const int mr_ic_pause_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int mr_ic_play_dark = 2130837716;
+			public const int mr_ic_pause_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int mr_ic_play_light = 2130837717;
-			
-			// aapt resource value: 0x7f0200e0
-			public const int notification_template_icon_bg = 2130837728;
+			public const int mr_ic_play_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ratchet = 2130837718;
+			public const int mr_ic_play_light = 2130837718;
+			
+			// aapt resource value: 0x7f0200e1
+			public const int notification_template_icon_bg = 2130837729;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ratchet_full = 2130837719;
+			public const int ratchet = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int refresh = 2130837720;
+			public const int ratchet_full = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int scott = 2130837721;
+			public const int refresh = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int scott159 = 2130837722;
+			public const int scott = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int slideout = 2130837723;
+			public const int scott159 = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int tdl = 2130837724;
+			public const int slideout = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int tdl_full = 2130837725;
+			public const int tdl = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int twitter = 2130837726;
+			public const int tdl_full = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int twitternav = 2130837727;
+			public const int twitter = 2130837727;
+			
+			// aapt resource value: 0x7f0200e0
+			public const int twitternav = 2130837728;
 			
 			static Drawable()
 			{
@@ -2549,8 +2702,8 @@ namespace HanselmanAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0096
-			public const int action0 = 2131427478;
+			// aapt resource value: 0x7f0b00b2
+			public const int action0 = 2131427506;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int action_bar = 2131427429;
@@ -2576,8 +2729,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0066
 			public const int action_context_bar = 2131427430;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int action_divider = 2131427482;
+			// aapt resource value: 0x7f0b00b6
+			public const int action_divider = 2131427510;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2621,8 +2774,26 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b004f
 			public const int buttonPanel = 2131427407;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int cancel_action = 2131427479;
+			// aapt resource value: 0x7f0b008a
+			public const int button_add_response = 2131427466;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int button_attachment = 2131427461;
+			
+			// aapt resource value: 0x7f0b008f
+			public const int button_login = 2131427471;
+			
+			// aapt resource value: 0x7f0b008b
+			public const int button_refresh = 2131427467;
+			
+			// aapt resource value: 0x7f0b0086
+			public const int button_send = 2131427462;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int button_update = 2131427475;
+			
+			// aapt resource value: 0x7f0b00b3
+			public const int cancel_action = 2131427507;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int center = 2131427382;
@@ -2636,8 +2807,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b005d
 			public const int checkbox = 2131427421;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int chronometer = 2131427485;
+			// aapt resource value: 0x7f0b00b9
+			public const int chronometer = 2131427513;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int clip_horizontal = 2131427390;
@@ -2690,8 +2861,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0027
 			public const int end = 2131427367;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int end_padder = 2131427490;
+			// aapt resource value: 0x7f0b00be
+			public const int end_padder = 2131427518;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int enterAlways = 2131427374;
@@ -2741,11 +2912,47 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b004a
 			public const int image = 2131427402;
 			
-			// aapt resource value: 0x7f0b00a1
-			public const int info = 2131427489;
+			// aapt resource value: 0x7f0b00bd
+			public const int info = 2131427517;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int input_email = 2131427457;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int input_message = 2131427459;
+			
+			// aapt resource value: 0x7f0b0080
+			public const int input_name = 2131427456;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int input_password = 2131427470;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int input_subject = 2131427458;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int label_author = 2131427477;
+			
+			// aapt resource value: 0x7f0b0096
+			public const int label_date = 2131427478;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int label_last_updated = 2131427464;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int label_message = 2131427453;
+			
+			// aapt resource value: 0x7f0b0097
+			public const int label_text = 2131427479;
+			
+			// aapt resource value: 0x7f0b0091
+			public const int label_title = 2131427473;
+			
+			// aapt resource value: 0x7f0b0092
+			public const int label_version = 2131427474;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int left = 2131427386;
@@ -2753,20 +2960,26 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0017
 			public const int light = 2131427351;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int line1 = 2131427483;
+			// aapt resource value: 0x7f0b00b7
+			public const int line1 = 2131427511;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int line3 = 2131427487;
+			// aapt resource value: 0x7f0b00bb
+			public const int line3 = 2131427515;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int listMode = 2131427352;
 			
+			// aapt resource value: 0x7f0b0098
+			public const int list_attachments = 2131427480;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int list_feedback_messages = 2131427468;
+			
 			// aapt resource value: 0x7f0b004c
 			public const int list_item = 2131427404;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int media_actions = 2131427481;
+			// aapt resource value: 0x7f0b00b5
+			public const int media_actions = 2131427509;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int middle = 2131427368;
@@ -2774,77 +2987,77 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0042
 			public const int mini = 2131427394;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int mr_art = 2131427464;
+			// aapt resource value: 0x7f0b00a4
+			public const int mr_art = 2131427492;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int mr_chooser_list = 2131427453;
+			// aapt resource value: 0x7f0b0099
+			public const int mr_chooser_list = 2131427481;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int mr_chooser_route_desc = 2131427456;
+			// aapt resource value: 0x7f0b009c
+			public const int mr_chooser_route_desc = 2131427484;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int mr_chooser_route_icon = 2131427454;
+			// aapt resource value: 0x7f0b009a
+			public const int mr_chooser_route_icon = 2131427482;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int mr_chooser_route_name = 2131427455;
+			// aapt resource value: 0x7f0b009b
+			public const int mr_chooser_route_name = 2131427483;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int mr_close = 2131427461;
+			// aapt resource value: 0x7f0b00a1
+			public const int mr_close = 2131427489;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int mr_control_divider = 2131427467;
+			// aapt resource value: 0x7f0b00a7
+			public const int mr_control_divider = 2131427495;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int mr_control_play_pause = 2131427473;
+			// aapt resource value: 0x7f0b00ad
+			public const int mr_control_play_pause = 2131427501;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int mr_control_subtitle = 2131427476;
+			// aapt resource value: 0x7f0b00b0
+			public const int mr_control_subtitle = 2131427504;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int mr_control_title = 2131427475;
+			// aapt resource value: 0x7f0b00af
+			public const int mr_control_title = 2131427503;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int mr_control_title_container = 2131427474;
+			// aapt resource value: 0x7f0b00ae
+			public const int mr_control_title_container = 2131427502;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int mr_custom_control = 2131427462;
+			// aapt resource value: 0x7f0b00a2
+			public const int mr_custom_control = 2131427490;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int mr_default_control = 2131427463;
+			// aapt resource value: 0x7f0b00a3
+			public const int mr_default_control = 2131427491;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int mr_dialog_area = 2131427458;
+			// aapt resource value: 0x7f0b009e
+			public const int mr_dialog_area = 2131427486;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int mr_expandable_area = 2131427457;
+			// aapt resource value: 0x7f0b009d
+			public const int mr_expandable_area = 2131427485;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int mr_group_expand_collapse = 2131427477;
+			// aapt resource value: 0x7f0b00b1
+			public const int mr_group_expand_collapse = 2131427505;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int mr_media_main_control = 2131427465;
+			// aapt resource value: 0x7f0b00a5
+			public const int mr_media_main_control = 2131427493;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int mr_name = 2131427460;
+			// aapt resource value: 0x7f0b00a0
+			public const int mr_name = 2131427488;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int mr_playback_control = 2131427466;
+			// aapt resource value: 0x7f0b00a6
+			public const int mr_playback_control = 2131427494;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int mr_title_bar = 2131427459;
+			// aapt resource value: 0x7f0b009f
+			public const int mr_title_bar = 2131427487;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int mr_volume_control = 2131427468;
+			// aapt resource value: 0x7f0b00a8
+			public const int mr_volume_control = 2131427496;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int mr_volume_group_list = 2131427469;
+			// aapt resource value: 0x7f0b00a9
+			public const int mr_volume_group_list = 2131427497;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int mr_volume_item_icon = 2131427471;
+			// aapt resource value: 0x7f0b00ab
+			public const int mr_volume_item_icon = 2131427499;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int mr_volume_slider = 2131427472;
+			// aapt resource value: 0x7f0b00ac
+			public const int mr_volume_slider = 2131427500;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int multiply = 2131427361;
@@ -2948,8 +3161,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b001e
 			public const int showTitle = 2131427358;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int sliding_tabs = 2131427491;
+			// aapt resource value: 0x7f0b00bf
+			public const int sliding_tabs = 2131427519;
 			
 			// aapt resource value: 0x7f0b0077
 			public const int snackbar_action = 2131427447;
@@ -2981,8 +3194,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b003c
 			public const int start = 2131427388;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int status_bar_latest_event_content = 2131427480;
+			// aapt resource value: 0x7f0b00b4
+			public const int status_bar_latest_event_content = 2131427508;
 			
 			// aapt resource value: 0x7f0b0070
 			public const int submit_area = 2131427440;
@@ -2993,17 +3206,20 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b000f
 			public const int terrain = 2131427343;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int text = 2131427488;
+			// aapt resource value: 0x7f0b00bc
+			public const int text = 2131427516;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int text2 = 2131427486;
+			// aapt resource value: 0x7f0b00ba
+			public const int text2 = 2131427514;
 			
 			// aapt resource value: 0x7f0b0058
 			public const int textSpacerNoButtons = 2131427416;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int time = 2131427484;
+			// aapt resource value: 0x7f0b008d
+			public const int text_headline = 2131427469;
+			
+			// aapt resource value: 0x7f0b00b8
+			public const int time = 2131427512;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int title = 2131427406;
@@ -3011,8 +3227,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0053
 			public const int title_template = 2131427411;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int toolbar = 2131427492;
+			// aapt resource value: 0x7f0b00c0
+			public const int toolbar = 2131427520;
 			
 			// aapt resource value: 0x7f0b003d
 			public const int top = 2131427389;
@@ -3029,11 +3245,17 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b001f
 			public const int useLogo = 2131427359;
 			
+			// aapt resource value: 0x7f0b0090
+			public const int view_header = 2131427472;
+			
 			// aapt resource value: 0x7f0b000a
 			public const int view_offset_helper = 2131427338;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int volume_item_container = 2131427470;
+			// aapt resource value: 0x7f0b00aa
+			public const int volume_item_container = 2131427498;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int web_update_details = 2131427476;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int wide = 2131427348;
@@ -3043,6 +3265,21 @@ namespace HanselmanAndroid
 			
 			// aapt resource value: 0x7f0b0020
 			public const int wrap_content = 2131427360;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int wrapper_attachments = 2131427460;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int wrapper_feedback = 2131427455;
+			
+			// aapt resource value: 0x7f0b007e
+			public const int wrapper_feedback_scroll = 2131427454;
+			
+			// aapt resource value: 0x7f0b0087
+			public const int wrapper_messages = 2131427463;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int wrapper_messages_buttons = 2131427465;
 			
 			static Id()
 			{
@@ -3234,64 +3471,82 @@ namespace HanselmanAndroid
 			public const int design_navigation_menu_item = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int mr_chooser_dialog = 2130903077;
+			public const int hockeyapp_activity_expiry_info = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int mr_chooser_list_item = 2130903078;
+			public const int hockeyapp_activity_feedback = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int mr_controller_material_dialog_b = 2130903079;
+			public const int hockeyapp_activity_login = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int mr_controller_volume_item = 2130903080;
+			public const int hockeyapp_activity_update = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int mr_playback_control = 2130903081;
+			public const int hockeyapp_fragment_update = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_volume_control = 2130903082;
+			public const int hockeyapp_view_feedback_message = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_media_action = 2130903083;
+			public const int mr_chooser_dialog = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_media_cancel_action = 2130903084;
+			public const int mr_chooser_list_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_big_media = 2130903085;
+			public const int mr_controller_material_dialog_b = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_big_media_narrow = 2130903086;
+			public const int mr_controller_volume_item = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_lines = 2130903087;
+			public const int mr_playback_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_media = 2130903088;
+			public const int mr_volume_control = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_part_chronometer = 2130903089;
+			public const int notification_media_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_part_time = 2130903090;
+			public const int notification_media_cancel_action = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int select_dialog_item_material = 2130903091;
+			public const int notification_template_big_media = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int select_dialog_multichoice_material = 2130903092;
+			public const int notification_template_big_media_narrow = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int select_dialog_singlechoice_material = 2130903093;
+			public const int notification_template_lines = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int support_simple_spinner_dropdown_item = 2130903094;
+			public const int notification_template_media = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int tabs = 2130903095;
+			public const int notification_template_part_chronometer = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int toolbar = 2130903096;
+			public const int notification_template_part_time = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int select_dialog_item_material = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int select_dialog_multichoice_material = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int select_dialog_singlechoice_material = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int support_simple_spinner_dropdown_item = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int tabs = 2130903101;
+			
+			// aapt resource value: 0x7f03003e
+			public const int toolbar = 2130903102;
 			
 			static Layout()
 			{
@@ -3363,8 +3618,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f070040
 			public const int abc_toolbar_collapse_description = 2131165248;
 			
-			// aapt resource value: 0x7f070046
-			public const int app_name = 2131165254;
+			// aapt resource value: 0x7f07008e
+			public const int app_name = 2131165326;
 			
 			// aapt resource value: 0x7f070042
 			public const int appbar_scrolling_view_behavior = 2131165250;
@@ -3468,8 +3723,224 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f07001e
 			public const int common_signin_button_text_long = 2131165214;
 			
+			// aapt resource value: 0x7f07008d
+			public const int hello = 2131165325;
+			
+			// aapt resource value: 0x7f070046
+			public const int hockeyapp_crash_dialog_app_name_fallback = 2131165254;
+			
+			// aapt resource value: 0x7f070047
+			public const int hockeyapp_crash_dialog_message = 2131165255;
+			
+			// aapt resource value: 0x7f070048
+			public const int hockeyapp_crash_dialog_negative_button = 2131165256;
+			
+			// aapt resource value: 0x7f070049
+			public const int hockeyapp_crash_dialog_neutral_button = 2131165257;
+			
+			// aapt resource value: 0x7f07004a
+			public const int hockeyapp_crash_dialog_positive_button = 2131165258;
+			
+			// aapt resource value: 0x7f07004b
+			public const int hockeyapp_crash_dialog_title = 2131165259;
+			
+			// aapt resource value: 0x7f07004c
+			public const int hockeyapp_dialog_error_message = 2131165260;
+			
+			// aapt resource value: 0x7f07004d
+			public const int hockeyapp_dialog_error_title = 2131165261;
+			
+			// aapt resource value: 0x7f07004e
+			public const int hockeyapp_dialog_negative_button = 2131165262;
+			
+			// aapt resource value: 0x7f07004f
+			public const int hockeyapp_dialog_positive_button = 2131165263;
+			
+			// aapt resource value: 0x7f070050
+			public const int hockeyapp_download_failed_dialog_message = 2131165264;
+			
+			// aapt resource value: 0x7f070051
+			public const int hockeyapp_download_failed_dialog_negative_button = 2131165265;
+			
+			// aapt resource value: 0x7f070052
+			public const int hockeyapp_download_failed_dialog_positive_button = 2131165266;
+			
+			// aapt resource value: 0x7f070053
+			public const int hockeyapp_download_failed_dialog_title = 2131165267;
+			
+			// aapt resource value: 0x7f070054
+			public const int hockeyapp_error_no_network_message = 2131165268;
+			
+			// aapt resource value: 0x7f070055
+			public const int hockeyapp_expiry_info_text = 2131165269;
+			
+			// aapt resource value: 0x7f070056
+			public const int hockeyapp_expiry_info_title = 2131165270;
+			
+			// aapt resource value: 0x7f070057
+			public const int hockeyapp_feedback_attach_file = 2131165271;
+			
+			// aapt resource value: 0x7f070058
+			public const int hockeyapp_feedback_attach_picture = 2131165272;
+			
+			// aapt resource value: 0x7f070059
+			public const int hockeyapp_feedback_attachment_button_text = 2131165273;
+			
+			// aapt resource value: 0x7f07005a
+			public const int hockeyapp_feedback_attachment_error = 2131165274;
+			
+			// aapt resource value: 0x7f07005b
+			public const int hockeyapp_feedback_attachment_loading = 2131165275;
+			
+			// aapt resource value: 0x7f07005c
+			public const int hockeyapp_feedback_email_hint = 2131165276;
+			
+			// aapt resource value: 0x7f07005d
+			public const int hockeyapp_feedback_failed_text = 2131165277;
+			
+			// aapt resource value: 0x7f07005e
+			public const int hockeyapp_feedback_failed_title = 2131165278;
+			
+			// aapt resource value: 0x7f07005f
+			public const int hockeyapp_feedback_fetching_feedback_text = 2131165279;
+			
+			// aapt resource value: 0x7f070060
+			public const int hockeyapp_feedback_generic_error = 2131165280;
+			
+			// aapt resource value: 0x7f070061
+			public const int hockeyapp_feedback_last_updated_text = 2131165281;
+			
+			// aapt resource value: 0x7f070062
+			public const int hockeyapp_feedback_max_attachments_allowed = 2131165282;
+			
+			// aapt resource value: 0x7f070063
+			public const int hockeyapp_feedback_message_hint = 2131165283;
+			
+			// aapt resource value: 0x7f070064
+			public const int hockeyapp_feedback_name_hint = 2131165284;
+			
+			// aapt resource value: 0x7f070065
+			public const int hockeyapp_feedback_refresh_button_text = 2131165285;
+			
+			// aapt resource value: 0x7f070066
+			public const int hockeyapp_feedback_response_button_text = 2131165286;
+			
+			// aapt resource value: 0x7f070067
+			public const int hockeyapp_feedback_select_file = 2131165287;
+			
+			// aapt resource value: 0x7f070068
+			public const int hockeyapp_feedback_select_picture = 2131165288;
+			
+			// aapt resource value: 0x7f070069
+			public const int hockeyapp_feedback_send_button_text = 2131165289;
+			
+			// aapt resource value: 0x7f07006a
+			public const int hockeyapp_feedback_send_generic_error = 2131165290;
+			
+			// aapt resource value: 0x7f07006b
+			public const int hockeyapp_feedback_send_network_error = 2131165291;
+			
+			// aapt resource value: 0x7f07006c
+			public const int hockeyapp_feedback_sending_feedback_text = 2131165292;
+			
+			// aapt resource value: 0x7f07006d
+			public const int hockeyapp_feedback_subject_hint = 2131165293;
+			
+			// aapt resource value: 0x7f07006e
+			public const int hockeyapp_feedback_title = 2131165294;
+			
+			// aapt resource value: 0x7f07006f
+			public const int hockeyapp_feedback_validate_email_empty = 2131165295;
+			
+			// aapt resource value: 0x7f070070
+			public const int hockeyapp_feedback_validate_email_error = 2131165296;
+			
+			// aapt resource value: 0x7f070071
+			public const int hockeyapp_feedback_validate_name_error = 2131165297;
+			
+			// aapt resource value: 0x7f070072
+			public const int hockeyapp_feedback_validate_subject_error = 2131165298;
+			
+			// aapt resource value: 0x7f070073
+			public const int hockeyapp_feedback_validate_text_error = 2131165299;
+			
+			// aapt resource value: 0x7f070074
+			public const int hockeyapp_login_email_hint = 2131165300;
+			
+			// aapt resource value: 0x7f070075
+			public const int hockeyapp_login_headline_text = 2131165301;
+			
+			// aapt resource value: 0x7f070076
+			public const int hockeyapp_login_headline_text_email_only = 2131165302;
+			
+			// aapt resource value: 0x7f070077
+			public const int hockeyapp_login_login_button_text = 2131165303;
+			
+			// aapt resource value: 0x7f070078
+			public const int hockeyapp_login_missing_credentials_toast = 2131165304;
+			
+			// aapt resource value: 0x7f070079
+			public const int hockeyapp_login_password_hint = 2131165305;
+			
+			// aapt resource value: 0x7f07007a
+			public const int hockeyapp_paint_dialog_message = 2131165306;
+			
+			// aapt resource value: 0x7f07007b
+			public const int hockeyapp_paint_dialog_negative_button = 2131165307;
+			
+			// aapt resource value: 0x7f07007c
+			public const int hockeyapp_paint_dialog_neutral_button = 2131165308;
+			
+			// aapt resource value: 0x7f07007d
+			public const int hockeyapp_paint_dialog_positive_button = 2131165309;
+			
+			// aapt resource value: 0x7f07007e
+			public const int hockeyapp_paint_indicator_toast = 2131165310;
+			
+			// aapt resource value: 0x7f07007f
+			public const int hockeyapp_paint_menu_clear = 2131165311;
+			
+			// aapt resource value: 0x7f070080
+			public const int hockeyapp_paint_menu_save = 2131165312;
+			
+			// aapt resource value: 0x7f070081
+			public const int hockeyapp_paint_menu_undo = 2131165313;
+			
+			// aapt resource value: 0x7f070082
+			public const int hockeyapp_permission_dialog_negative_button = 2131165314;
+			
+			// aapt resource value: 0x7f070083
+			public const int hockeyapp_permission_dialog_positive_button = 2131165315;
+			
+			// aapt resource value: 0x7f070084
+			public const int hockeyapp_permission_update_message = 2131165316;
+			
+			// aapt resource value: 0x7f070085
+			public const int hockeyapp_permission_update_title = 2131165317;
+			
+			// aapt resource value: 0x7f070086
+			public const int hockeyapp_update_button = 2131165318;
+			
+			// aapt resource value: 0x7f070087
+			public const int hockeyapp_update_dialog_message = 2131165319;
+			
+			// aapt resource value: 0x7f070088
+			public const int hockeyapp_update_dialog_negative_button = 2131165320;
+			
+			// aapt resource value: 0x7f070089
+			public const int hockeyapp_update_dialog_positive_button = 2131165321;
+			
+			// aapt resource value: 0x7f07008a
+			public const int hockeyapp_update_dialog_title = 2131165322;
+			
+			// aapt resource value: 0x7f07008b
+			public const int hockeyapp_update_mandatory_toast = 2131165323;
+			
+			// aapt resource value: 0x7f07008c
+			public const int hockeyapp_update_version_details_label = 2131165324;
+			
 			// aapt resource value: 0x7f070045
-			public const int hello = 2131165253;
+			public const int library_name = 2131165253;
 			
 			// aapt resource value: 0x7f07001f
 			public const int mr_button_content_description = 2131165215;
@@ -3989,10 +4460,19 @@ namespace HanselmanAndroid
 			public const int CardView_Light = 2131492890;
 			
 			// aapt resource value: 0x7f0c0172
-			public const int MyTheme = 2131493234;
+			public const int HockeyApp_ButtonStyle = 2131493234;
 			
 			// aapt resource value: 0x7f0c0173
-			public const int MyTheme_Base = 2131493235;
+			public const int HockeyApp_EditTextStyle = 2131493235;
+			
+			// aapt resource value: 0x7f0c0174
+			public const int HockeyApp_SingleLineInputStyle = 2131493236;
+			
+			// aapt resource value: 0x7f0c0175
+			public const int MyTheme = 2131493237;
+			
+			// aapt resource value: 0x7f0c0176
+			public const int MyTheme_Base = 2131493238;
 			
 			// aapt resource value: 0x7f0c0032
 			public const int Platform_AppCompat = 2131492914;
