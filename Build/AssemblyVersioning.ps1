@@ -85,6 +85,8 @@ $buildNumberAssemblyVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTok
 $buildNumberAssemblyFileVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTokens[0],$buildNumberTokens[1],$buildNumberTokens[2], $buildNumberTokens[3])
 $buildNumberAssemblyInformationalVersion = ([string]::Format("{0}.{1}.{2}.{3}{4}",$buildNumberTokens[0],$buildNumberTokens[1], $buildNumberTokens[2], $buildNumberTokens[3], $infoversionpostfix)).Trim()
 
+$buildNumberVersionCode = $buildNumberAssemblyVersion = ([int]$buildNumberTokens[0])*1000000 + ([int]$buildNumberTokens[1])*100000 + ([int]$assemblyVersionThirdDigit)*100 + ([int]$assemblyVersionForthDigit)*1
+$buildNumberVersionName = [string]::Format("{0}.{1}",$buildNumberTokens[0],$buildNumberTokens[1])
 
 Write-Host "Assembly Version: $buildNumberAssemblyVersion"
 Write-Host "Assembly File Version: $buildNumberAssemblyFileVersion"
@@ -99,6 +101,10 @@ $replacePatternAssemblyInformationalVersion = "`${1}$($buildNumberAssemblyInform
 [regex]$patternPackageVersion = "(<version>)(\d+\.\d+\.\d+\.\d+)(</version>)"
 $replacePatternPackageVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`$3"
 
+[regex]$patternAndroidVersionCode = "(android:versionCode="")(\d+)("")"
+$replacePatternAndroidVersionCode = "`${1}$($buildNumberAssemblyVersion)`$3"
+[regex]$patternAndroidVersionName = "(android:versionName="")(\d+\.\d+)("")"
+$replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`$3"
 
 # Apply the version to the assembly property files
 $aifiles = gci $Env:BUILD_SOURCESDIRECTORY -recurse -include "*Properties*","My Project","_accessory" | 
@@ -123,6 +129,7 @@ else
     Write-Warning "Found no assembly info files."
 }
 
+# Apply the version to the nuget specification files
 $specfiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include *.nuspec 
 if($specfiles)
 {
@@ -132,6 +139,26 @@ if($specfiles)
         $filecontent = Get-Content($file)
         attrib $file -r
         $filecontent = $filecontent -replace $patternPackageVersion, $replacePatternPackageVersion
+        $filecontent | Out-File $file
+        Write-Host "$file.FullName - version applied"
+    }
+}
+else
+{
+    Write-Host "Found no package specification files."
+}
+
+# Apply the version to the android manifest files files
+$androidManifestFiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include "androidmanifest.xml"
+if($androidManifestFiles)
+{
+    Write-Host "Will apply $NewVersion to $($androidManifestFiles.count) android manifest files."
+
+    foreach ($file in $androidManifestFiles) {
+        $filecontent = Get-Content($file)
+        attrib $file -r
+        $filecontent = $filecontent -replace $patternAndroidVersionCode, $replacePatternAndroidVersionCode
+        $filecontent = $filecontent -replace $patternAndroidVersionName, $replacePatternAndroidVersionName
         $filecontent | Out-File $file
         Write-Host "$file.FullName - version applied"
     }
