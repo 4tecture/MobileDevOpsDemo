@@ -102,21 +102,21 @@ Write-Host "Build Number Version Name: $buildNumberVersionName"
 
 # AssemblyInfo (*.)
 [regex]$patternAssemblyVersion = "(AssemblyVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
-$replacePatternAssemblyVersion = "`${1}$($buildNumberAssemblyVersion)`$3"
+$replacePatternAssemblyVersion = "`${1}$($buildNumberAssemblyVersion)`${3}"
 [regex]$patternAssemblyFileVersion = "(AssemblyFileVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
-$replacePatternAssemblyFileVersion = "`${1}$($buildNumberAssemblyFileVersion)`$3"
+$replacePatternAssemblyFileVersion = "`${1}$($buildNumberAssemblyFileVersion)`${3}"
 [regex]$patternAssemblyInformationalVersion = "(AssemblyInformationalVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
-$replacePatternAssemblyInformationalVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`$3"
+$replacePatternAssemblyInformationalVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`${3}"
 
 # NuGet (.*nuspec)
 [regex]$patternPackageVersion = "(<version>)(\d+\.\d+\.\d+\.\d+)(</version>)"
-$replacePatternPackageVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`$3"
+$replacePatternPackageVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`${3}"
 
 # Droid (AndroidManifest.xml)
 [regex]$patternAndroidVersionCode = "(android:versionCode="")(\d+)("")"
-$replacePatternAndroidVersionCode = "`${1}$($buildNumberAssemblyVersion)`$3"
+$replacePatternAndroidVersionCode = "`${1}$($buildNumberVersionCode)`${3}"
 [regex]$patternAndroidVersionName = "(android:versionName="")(\d+\.\d+)("")"
-$replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`$3"
+$replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`${3}"
 
 # iOS (Info.plist)
 [regex]$patterniOSCfBundleVersion = "(<key>CFBundleVersion<\/key>)(\s+)(<string>)(\d+.\d+)(<\/string>)"
