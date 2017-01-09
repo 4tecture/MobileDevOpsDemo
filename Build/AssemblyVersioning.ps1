@@ -11,8 +11,8 @@
 # This script would then apply version 2013.07.19.1 to your assemblies.
 
 Param(    
-	[int]$digitsSetInAssemblyVersion = 4,
-	[string]$infoversionpostfix = ""
+    [int]$digitsSetInAssemblyVersion = 4,
+    [string]$infoversionpostfix = ""
 ) 
 
 # Enable -Verbose option
@@ -75,7 +75,9 @@ switch($VersionData.Count)
 $NewVersion = $VersionData[0]
 Write-Host "Version: $NewVersion"
 
-# differentiate between assembly version and assembly file version
+#-------------------------------------------------------------------------------------------------------------
+# Version Pattern Definitions. Differentiate between platform specific patterns.
+#-------------------------------------------------------------------------------------------------------------
 $buildNumberTokens = $NewVersion.ToString().Split('.')
 $assemblyVersionThirdDigit = if($digitsSetInAssemblyVersion -gt 2){ $buildNumberTokens[2]} else {"0"}
 $assemblyVersionForthDigit = if($digitsSetInAssemblyVersion -gt 3){ $buildNumberTokens[3]} else {"0"}
@@ -91,22 +93,44 @@ $buildNumberVersionName = [string]::Format("{0}.{1}",$buildNumberTokens[0],$buil
 Write-Host "Assembly Version: $buildNumberAssemblyVersion"
 Write-Host "Assembly File Version: $buildNumberAssemblyFileVersion"
 Write-Host "Assembly File Version: $buildNumberAssemblyInformationalVersion"
+Write-Host "Build Number Version Code: $buildNumberVersionCode"
+Write-Host "Build Number Version Name: $buildNumberVersionName"
 
+#-------------------------------------------------------------------------------------------------------------
+# Replacement Pattern Definition
+#-------------------------------------------------------------------------------------------------------------
+
+# AssemblyInfo (*.)
 [regex]$patternAssemblyVersion = "(AssemblyVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
 $replacePatternAssemblyVersion = "`${1}$($buildNumberAssemblyVersion)`$3"
 [regex]$patternAssemblyFileVersion = "(AssemblyFileVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
 $replacePatternAssemblyFileVersion = "`${1}$($buildNumberAssemblyFileVersion)`$3"
 [regex]$patternAssemblyInformationalVersion = "(AssemblyInformationalVersion\("")(\d+\.\d+\.\d+\.\d+)(""\))"
 $replacePatternAssemblyInformationalVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`$3"
+
+# NuGet (.*nuspec)
 [regex]$patternPackageVersion = "(<version>)(\d+\.\d+\.\d+\.\d+)(</version>)"
 $replacePatternPackageVersion = "`${1}$($buildNumberAssemblyInformationalVersion)`$3"
 
+# Droid (AndroidManifest.xml)
 [regex]$patternAndroidVersionCode = "(android:versionCode="")(\d+)("")"
 $replacePatternAndroidVersionCode = "`${1}$($buildNumberAssemblyVersion)`$3"
 [regex]$patternAndroidVersionName = "(android:versionName="")(\d+\.\d+)("")"
 $replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`$3"
 
-# Apply the version to the assembly property files
+# iOS (Info.plist)
+[regex]$patterniOSCfBundleVersion = "(<key>CFBundleVersion<\/key>)(\s+)(<string>)(\d+.\d+)(<\/string>)"
+$replacePatterniOSCfBundleVersion = "`${1}`${2}`${3}$($buildNumberAssemblyVersion)`${5}"
+[regex]$patterniOSCfBundleShortVersion = "(<key>CFBundleShortVersionString<\/key>)(\s+)(<string>)(\d+.\d+)(<\/string>)"
+$replacePatterniOSCfBundleShortVersion = "`${1}`${2}`${3}$($buildNumberVersionName)`${5}"
+
+#-------------------------------------------------------------------------------------------------------------
+# Replacement Pattern Execution
+#-------------------------------------------------------------------------------------------------------------
+
+################################
+# Assembly Property Files
+################################
 $aifiles = gci $Env:BUILD_SOURCESDIRECTORY -recurse -include "*Properties*","My Project","_accessory" | 
     ?{ $_.PSIsContainer } | 
     foreach { gci -Path $_.FullName -Recurse -include *AssemblyInfo.* }
@@ -118,18 +142,20 @@ if($aifiles)
         $filecontent = Get-Content($file)
         attrib $file -r
         $filecontent = $filecontent -replace $patternAssemblyVersion, $replacePatternAssemblyVersion
-		$filecontent = $filecontent -replace $patternAssemblyFileVersion, $replacePatternAssemblyFileVersion
-		$filecontent = $filecontent -replace $patternAssemblyInformationalVersion, $replacePatternAssemblyInformationalVersion
+        $filecontent = $filecontent -replace $patternAssemblyFileVersion, $replacePatternAssemblyFileVersion
+        $filecontent = $filecontent -replace $patternAssemblyInformationalVersion, $replacePatternAssemblyInformationalVersion
         $filecontent | Out-File $file
         Write-Host "$file.FullName - version applied"
     }
 }
 else
 {
-    Write-Warning "Found no assembly info files."
+    Write-Warning "No assembly property files found."
 }
 
-# Apply the version to the nuget specification files
+################################
+# NuGet Specification Files
+################################
 $specfiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include *.nuspec 
 if($specfiles)
 {
@@ -145,11 +171,13 @@ if($specfiles)
 }
 else
 {
-    Write-Host "Found no package specification files."
+    Write-Warning "No nuget specification files found."
 }
 
-# Apply the version to the android manifest files files
-$androidManifestFiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include "androidmanifest.xml"
+################################
+# Android Manifest Files
+################################
+$androidManifestFiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include "AndroidManifest.xml"
 if($androidManifestFiles)
 {
     Write-Host "Will apply $NewVersion to $($androidManifestFiles.count) android manifest files."
@@ -165,5 +193,27 @@ if($androidManifestFiles)
 }
 else
 {
-    Write-Host "Found no package specification files."
+    Write-Warning "No android manifest.xml files found."
+}
+
+################################
+# iOS Info Files
+################################
+$iOSInfoFiles = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -include "Info.plist"
+if($iOSInfoFiles)
+{
+    Write-Host "Will apply $NewVersion to $($iOSInfoFiles.count) iOS info files."
+
+    foreach ($file in $iOSInfoFiles) {
+        $filecontent = Get-Content($file)
+        attrib $file -r
+        $filecontent = $filecontent -replace $patterniOSCfBundleVersion, $replacePatterniOSCfBundleVersion
+        $filecontent = $filecontent -replace $patterniOSCfBundleShortVersion, $replacePatterniOSCfBundleShortVersion
+        $filecontent | Out-File $file
+        Write-Host "$file.FullName - version applied"
+    }
+}
+else
+{
+    Write-Warning "No iOS info.plist files found."
 }
