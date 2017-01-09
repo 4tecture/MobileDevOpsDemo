@@ -145,7 +145,7 @@ if($aifiles)
         $filecontent = $filecontent -replace $patternAssemblyFileVersion, $replacePatternAssemblyFileVersion
         $filecontent = $filecontent -replace $patternAssemblyInformationalVersion, $replacePatternAssemblyInformationalVersion
         $filecontent | Out-File $file
-        Write-Host "$file.FullName - version applied"
+        Write-Host "$($file.FullName) - version applied"
     }
 }
 else
@@ -166,7 +166,7 @@ if($specfiles)
         attrib $file -r
         $filecontent = $filecontent -replace $patternPackageVersion, $replacePatternPackageVersion
         $filecontent | Out-File $file
-        Write-Host "$file.FullName - version applied"
+        Write-Host "$($file.FullName) - version applied"
     }
 }
 else
@@ -188,7 +188,7 @@ if($androidManifestFiles)
         $filecontent = $filecontent -replace $patternAndroidVersionCode, $replacePatternAndroidVersionCode
         $filecontent = $filecontent -replace $patternAndroidVersionName, $replacePatternAndroidVersionName
         $filecontent | Out-File $file
-        Write-Host "$file.FullName - version applied"
+        Write-Host "$($file.FullName) - version applied"
     }
 }
 else
@@ -210,7 +210,7 @@ if($iOSInfoFiles)
         $filecontent = $filecontent -replace $patterniOSCfBundleVersion, $replacePatterniOSCfBundleVersion
         $filecontent = $filecontent -replace $patterniOSCfBundleShortVersion, $replacePatterniOSCfBundleShortVersion
         $filecontent | Out-File $file
-        Write-Host "$file.FullName - version applied"
+        Write-Host "$($file.FullName) - version applied"
     }
 }
 else
