@@ -42,6 +42,7 @@ namespace Hanselman.Portable.Views
             {
                 stopWatch.Stop();
                 eventTrackingService.TrackEvent("PageVisitDuration", new Dictionary<string, string> { { "View", this.GetType().Name } }, new Dictionary<string, double>() { {"Duration", stopWatch.ElapsedMilliseconds} });
+                stopWatch = null;
             }
 
             var lifecycleEvent = this.BindingContext as IPageLifeCycleEvents;
