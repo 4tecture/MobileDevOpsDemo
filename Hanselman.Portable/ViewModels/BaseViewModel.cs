@@ -11,7 +11,11 @@ namespace Hanselman.Portable
     {
         public BaseViewModel()
         {
-            EventTrackingService = DependencyService.Get<IEventTrackingService>();
+            try
+            {
+                EventTrackingService = DependencyService.Get<IEventTrackingService>();
+            }
+            catch (Exception) { } // Bad Hack! Use a proper IoC implementation instead! DependencyService is not initialized for unit tests
         }
 
         private string title = string.Empty;
