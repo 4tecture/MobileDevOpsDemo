@@ -144,7 +144,7 @@ if($aifiles)
         $filecontent = $filecontent -replace $patternAssemblyVersion, $replacePatternAssemblyVersion
         $filecontent = $filecontent -replace $patternAssemblyFileVersion, $replacePatternAssemblyFileVersion
         $filecontent = $filecontent -replace $patternAssemblyInformationalVersion, $replacePatternAssemblyInformationalVersion
-        $filecontent | Out-File $file
+        $filecontent | Out-File $file -Encoding UTF8
         Write-Host "$($file.FullName) - version applied"
     }
 }
@@ -165,7 +165,7 @@ if($specfiles)
         $filecontent = Get-Content($file)
         attrib $file -r
         $filecontent = $filecontent -replace $patternPackageVersion, $replacePatternPackageVersion
-        $filecontent | Out-File $file
+        $filecontent | Out-File $file -Encoding UTF8
         Write-Host "$($file.FullName) - version applied"
     }
 }
@@ -187,7 +187,7 @@ if($androidManifestFiles)
         attrib $file -r
         $filecontent = $filecontent -replace $patternAndroidVersionCode, $replacePatternAndroidVersionCode
         $filecontent = $filecontent -replace $patternAndroidVersionName, $replacePatternAndroidVersionName
-        $filecontent | Out-File $file
+        $filecontent | Out-File $file -Encoding UTF8
         Write-Host "$($file.FullName) - version applied"
     }
 }
@@ -209,7 +209,7 @@ if($iOSInfoFiles)
         attrib $file -r
         $filecontent = $filecontent -replace $patterniOSCfBundleVersion, $replacePatterniOSCfBundleVersion
         $filecontent = $filecontent -replace $patterniOSCfBundleShortVersion, $replacePatterniOSCfBundleShortVersion
-        $filecontent | Out-File $file
+        $filecontent | Out-File $file -Encoding UTF8
         Write-Host "$($file.FullName) - version applied"
     }
 }
