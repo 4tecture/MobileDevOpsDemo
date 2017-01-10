@@ -119,9 +119,9 @@ $replacePatternAndroidVersionCode = "`${1}$($buildNumberVersionCode)`${3}"
 $replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`${3}"
 
 # iOS (Info.plist)
-[regex]$patterniOSCfBundleVersion = "(<key>CFBundleVersion<\/key>)((?:.|\n)*?)(<string>)(\d+.\d+)(<\/string>)"
+[regex]$patterniOSCfBundleVersion = "(<key>CFBundleVersion<\/key>)((?:.|\n|\r\n)*?)(<string>)(\d+.\d+)(<\/string>)"
 $replacePatterniOSCfBundleVersion = "`${1}`${2}`${3}$($buildNumberAssemblyVersion)`${5}"
-[regex]$patterniOSCfBundleShortVersion = "(<key>CFBundleVersion<\/key>)((?:.|\n)*?)(<string>)(\d+.\d+)(<\/string>)"
+[regex]$patterniOSCfBundleShortVersion = "(<key>CFBundleVersion<\/key>)((?:.|\n|\r\n)*?)(<string>)(\d+.\d+)(<\/string>)"
 $replacePatterniOSCfBundleShortVersion = "`${1}`${2}`${3}$($buildNumberVersionName)`${5}"
 
 #-------------------------------------------------------------------------------------------------------------
