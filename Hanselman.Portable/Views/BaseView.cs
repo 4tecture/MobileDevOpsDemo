@@ -1,8 +1,9 @@
-﻿using Xamarin.Forms;
+﻿using Hanselman.Portable.Views;
+using Xamarin.Forms;
 
 namespace Hanselman.Portable
 {
-    public class BaseView : ContentPage
+    public class BaseView : ContentPageBase
     {
         public BaseView()
         {

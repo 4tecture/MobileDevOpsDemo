@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-    public partial class PodcastPage : ContentPage
+    public partial class PodcastPage : ContentPageBase
     {
         private PodcastViewModel ViewModel
         {

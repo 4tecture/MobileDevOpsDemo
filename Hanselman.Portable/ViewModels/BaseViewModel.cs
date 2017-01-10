@@ -2,10 +2,11 @@
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Hanselman.Portable.Helpers;
 
 namespace Hanselman.Portable
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged, IPageLifeCycleEvents
     {
         public BaseViewModel()
         {
@@ -115,6 +116,14 @@ namespace Hanselman.Portable
                 return;
 
             changed(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public virtual  void OnAppearing()
+        {
+        }
+
+        public virtual void OnDisappearing()
+        {
         }
     }
 }

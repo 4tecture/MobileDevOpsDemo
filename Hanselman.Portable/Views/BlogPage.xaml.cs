@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-    public partial class BlogPage : ContentPage
+    public partial class BlogPage : ContentPageBase
     {
 
         private BlogFeedViewModel ViewModel
@@ -21,7 +21,6 @@ namespace Hanselman.Portable.Views
         {
             InitializeComponent();
             BindingContext = new BlogFeedViewModel();
-
             listView.ItemTapped += (sender, args) =>
             {
                 if (listView.SelectedItem == null)

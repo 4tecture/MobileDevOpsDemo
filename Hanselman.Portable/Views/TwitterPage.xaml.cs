@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-    public partial class TwitterPage : ContentPage
+    public partial class TwitterPage : ContentPageBase
     {
         private TwitterViewModel ViewModel
         {
