@@ -87,7 +87,7 @@ $buildNumberAssemblyVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTok
 $buildNumberAssemblyFileVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTokens[0],$buildNumberTokens[1],$buildNumberTokens[2], $buildNumberTokens[3])
 $buildNumberAssemblyInformationalVersion = ([string]::Format("{0}.{1}.{2}.{3}{4}",$buildNumberTokens[0],$buildNumberTokens[1], $buildNumberTokens[2], $buildNumberTokens[3], $infoversionpostfix)).Trim()
 
-$buildNumberVersionCode = $buildNumberAssemblyVersion = ([int]$buildNumberTokens[0])*1000000 + ([int]$buildNumberTokens[1])*100000 + ([int]$assemblyVersionThirdDigit)*100 + ([int]$assemblyVersionForthDigit)*1
+$buildNumberVersionCode = $buildNumberAssemblyVersion = ([int]$buildNumberTokens[0])*10000000 + ([int]$buildNumberTokens[1])*100000 + ([int]$assemblyVersionThirdDigit)*100 + ([int]$assemblyVersionForthDigit)*1
 $buildNumberVersionName = [string]::Format("{0}.{1}",$buildNumberTokens[0],$buildNumberTokens[1])
 
 Write-Host "Assembly Version: $buildNumberAssemblyVersion"
