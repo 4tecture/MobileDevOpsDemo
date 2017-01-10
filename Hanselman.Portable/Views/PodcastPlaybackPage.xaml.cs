@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-  public partial class PodcastPlaybackPage : ContentPage
+  public partial class PodcastPlaybackPage : ContentPageBase
   {
     public PodcastPlaybackPage(FeedItem item)
     {

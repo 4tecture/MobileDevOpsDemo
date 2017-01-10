@@ -5,6 +5,8 @@ using LinqToTwitter;
 using System.Threading.Tasks;
 using System.Linq;
 using Hanselman.Portable.Manager;
+using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace Hanselman.Portable
 {
@@ -42,6 +44,7 @@ namespace Hanselman.Portable
 
         public async Task ExecuteLoadTweetsCommand()
         {
+            var sw = Stopwatch.StartNew();
             if (IsBusy)
                 return;
 
@@ -76,6 +79,13 @@ namespace Hanselman.Portable
                 var page = new ContentPage();
                 await page.DisplayAlert("Error", "Unable to load tweets.", "OK");
             }
+
+            sw.Stop();
+            if(EventTrackingService != null)
+            {
+                EventTrackingService.TrackEvent("TwitterLoading", measurements: new Dictionary<string, double>() { { "Duration", sw.ElapsedMilliseconds } });
+            }
+            sw = null;
 
             IsBusy = false;
             LoadTweetsCommand.ChangeCanExecute();

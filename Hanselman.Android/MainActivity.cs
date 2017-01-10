@@ -28,9 +28,11 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
+            // void TrackEvent(string name, IDictionary<string, string> properties = null, IDictionary<string, double> measurements = null)
             CrashManager.Register(this);
             MetricsManager.Register(Application);
             FeedbackManager.Register(Application);
+            
 
             //FeedbackManager.ShowFeedbackActivity(ApplicationContext); // todo: demo only
             //DependencyService.Register<IFeedbackService, FeedbackService>(); // using DependencyAttribute
@@ -41,6 +43,18 @@ namespace HanselmanAndroid
             Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
             LoadApplication(new App());
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            Tracking.StartUsage(this);
+        }
+
+        protected override void OnPause()
+        {
+            base.OnPause();
+            Tracking.StopUsage(this);
         }
     }
 }

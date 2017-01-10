@@ -10,7 +10,7 @@ using Hanselman.Portable.Helpers;
 
 namespace Hanselman.Portable.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class AboutPage : ContentPageBase
     {
 
         void OpenBrowser(string url)

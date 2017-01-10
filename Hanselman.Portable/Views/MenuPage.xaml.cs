@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-    public partial class MenuPage : ContentPage
+    public partial class MenuPage : ContentPageBase
     {
         RootPage root;
         List<HomeMenuItem> menuItems;

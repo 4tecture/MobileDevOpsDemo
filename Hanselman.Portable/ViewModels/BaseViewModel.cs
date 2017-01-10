@@ -2,13 +2,16 @@
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Hanselman.Portable.Helpers;
+using Xamarin.Forms;
 
 namespace Hanselman.Portable
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged, IPageLifeCycleEvents
     {
         public BaseViewModel()
         {
+            EventTrackingService = DependencyService.Get<IEventTrackingService>();
         }
 
         private string title = string.Empty;
@@ -79,10 +82,25 @@ namespace Hanselman.Portable
         /// Gets or sets if we can load more.
         /// </summary>
         public const string CanLoadMorePropertyName = "CanLoadMore";
+        private IEventTrackingService eventTrackingService;
+
         public bool CanLoadMore
         {
             get { return canLoadMore; }
             set { SetProperty(ref canLoadMore, value); }
+        }
+
+        protected IEventTrackingService EventTrackingService
+        {
+            get
+            {
+                return eventTrackingService;
+            }
+
+            private set
+            {
+                eventTrackingService = value;
+            }
         }
 
         protected bool SetProperty<T>(
@@ -115,6 +133,14 @@ namespace Hanselman.Portable
                 return;
 
             changed(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public virtual  void OnAppearing()
+        {
+        }
+
+        public virtual void OnDisappearing()
+        {
         }
     }
 }
