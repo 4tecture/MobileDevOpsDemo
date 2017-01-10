@@ -87,8 +87,8 @@ $buildNumberAssemblyVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTok
 $buildNumberAssemblyFileVersion = [string]::Format("{0}.{1}.{2}.{3}",$buildNumberTokens[0],$buildNumberTokens[1],$buildNumberTokens[2], $buildNumberTokens[3])
 $buildNumberAssemblyInformationalVersion = ([string]::Format("{0}.{1}.{2}.{3}{4}",$buildNumberTokens[0],$buildNumberTokens[1], $buildNumberTokens[2], $buildNumberTokens[3], $infoversionpostfix)).Trim()
 
-$buildNumberVersionCode = $buildNumberAssemblyVersion = ([int]$buildNumberTokens[0])*10000000 + ([int]$buildNumberTokens[1])*100000 + ([int]$assemblyVersionThirdDigit)*100 + ([int]$assemblyVersionForthDigit)*1
-$buildNumberVersionName = [string]::Format("{0}.{1}",$buildNumberTokens[0],$buildNumberTokens[1])
+$buildNumberVersionCode = ([int]$buildNumberTokens[0])*10000000 + ([int]$buildNumberTokens[1])*100000 + ([int]$assemblyVersionThirdDigit)*100 + ([int]$assemblyVersionForthDigit)*1
+$buildNumberVersionName = [string]::Format("{0}.{1}.{2}",$buildNumberTokens[0],$buildNumberTokens[1],$buildNumberTokens[2])
 
 Write-Host "Assembly Version: $buildNumberAssemblyVersion"
 Write-Host "Assembly File Version: $buildNumberAssemblyFileVersion"
@@ -115,7 +115,7 @@ $replacePatternPackageVersion = "`${1}$($buildNumberAssemblyInformationalVersion
 # Droid (AndroidManifest.xml)
 [regex]$patternAndroidVersionCode = "(android:versionCode="")(\d+)("")"
 $replacePatternAndroidVersionCode = "`${1}$($buildNumberVersionCode)`${3}"
-[regex]$patternAndroidVersionName = "(android:versionName="")(\d+\.\d+)("")"
+[regex]$patternAndroidVersionName = "(android:versionName="")(\d+\.\d+\.\d+)("")"
 $replacePatternAndroidVersionName = "`${1}$($buildNumberVersionName)`${3}"
 
 # iOS (Info.plist)
