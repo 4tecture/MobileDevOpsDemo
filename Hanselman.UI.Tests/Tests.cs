@@ -18,6 +18,8 @@ namespace Hanselman.UI.Tests
         {
             app = ConfigureApp
                 .Android
+                //.ApkFile(@"C:\Users\mmueller\ReposDemo\Hanselman.Forms\Hanselman.Android\bin\Debug\com.refractored.hanselman.apk")
+                //.ApkFile(@"C:\Users\mmueller\ReposDemo\Hanselman.Forms\Hanselman.Android\bin\Release\com.refractored.hanselman.apk")
                 .StartApp();
         }
 
@@ -37,7 +39,21 @@ namespace Hanselman.UI.Tests
             this.TestMenuItem("Ratchet");
             this.TestMenuItem("Developers Life");
         }
-        
+
+        //[Test]
+        //public void ReplDemo()
+        //{
+        //    // REPL (read-eval-print-loop)
+        //    app.Repl();
+
+        //    //tree
+        //    //app.Tap("OK)
+        //    //app.Tap(x => x.Marked("Hanselminutes"))
+
+        //    //app.Tap("OK");
+        //    //app.Tap("Hanselminutes");
+        //}
+
 
         private void TestMenuItem(string name)
         {
